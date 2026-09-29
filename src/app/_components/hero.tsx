@@ -46,16 +46,20 @@ export function Hero() {
         </div>
       </div>
 
-      {/* <div className="relative aspect-[4/5] overflow-hidden rounded-lg border-4 border-white shadow-xl">
-        <Image
-          src="/images/profile.jpg"
-          alt={`Photo of ${siteConfig.name}`}
-          fill
-          priority
-          sizes="(min-width: 768px) 50vw, 100vw"
-          className="object-cover"
-        />
-      </div> */}
+     <div className="relative aspect-[3/3] overflow-hidden rounded-lg">
+  <video
+    className="h-full w-full object-cover"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="metadata"
+    poster="/images/profile.jpg"
+    aria-label={`Video of ${siteConfig.name}`}
+  >
+    <source src="/videos/profile.webm" type="video/webm" />
+  </video>
+</div>
     </section>
   );
 }
