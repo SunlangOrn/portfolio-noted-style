@@ -26,5 +26,21 @@ export const projects: Project[] = [
     tech: ["Dart", "Flutter"],
     repoUrl: "https://github.com/SunlangOrn/e-commerce-front.git",
   },
+  {
+    id: "blood-donation-service",
+    title: "Blood Donation Service",
+    description:
+      "The Blood Donation Service is a system that helps connect blood donors with hospitals and patients who need blood fast. It makes finding donors easier and sends quick alerts during emergencies.",
+    tech: ["Java", "Springboot", "OneSignal", "Elaicsearch", "MySQL", "Docker"],
+    repoUrl: "https://github.com/SunlangOrn/blood-donation-service.git",
+  },
+  {
+    id: "Health-blog-service",
+    title: "Health Blog",
+    description:
+      "The Health Blog Platform is a web application where users can read health articles and follow their favorite writers. It uses an asynchronous background system to handle heavy tasks—like sending email notifications—so the website stays fast and smooth for users.",
+    tech: ["Java", "Springboot", "RabbitMQ", "Postgres", "Docker"],
+    repoUrl: "https://github.com/SunlangOrn/heath_blog.git",
+  },
 ];
 
