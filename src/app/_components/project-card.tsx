@@ -16,26 +16,10 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const { title, description, tech, image, repoUrl, demoUrl } = project;
+  const { title, description, tech, repoUrl, demoUrl } = project;
 
   return (
-    <Card className="overflow-hidden pt-0">
-      <div className="relative aspect-video bg-neutral-100">
-        {image ? (
-          <Image
-            src={image}
-            alt={`Screenshot of ${title}`}
-            fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover"
-          />
-        ) : (
-          <div className="flex h-full items-center justify-center text-sm text-neutral-400">
-            No screenshot yet
-          </div>
-        )}
-      </div>
-
+    <Card className="overflow-hidden pt-0"> 
       <CardHeader>
         <CardTitle className="font-handwriting text-2xl">{title}</CardTitle>
         <CardDescription>{description}</CardDescription>

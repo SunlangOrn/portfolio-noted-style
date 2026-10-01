@@ -16,22 +16,22 @@ export function ExperienceSection() {
                     <AccordionItem
                         key={exp.id}
                         value={exp.id}
-                        className="rounded-lg border bg-neutral-50 px-6"
+                        className="rounded-lg border bg-neutral-50 px-6 dark:border-neutral-700 dark:bg-neutral-900"
                     >
                         <AccordionTrigger className="hover:no-underline">
                             <span className="block text-left">
                                 <span className="font-handwriting block text-2xl font-bold">
                                     {exp.company}
                                 </span>
-                                <span className="block text-neutral-600">{exp.role}</span>
-                                <span className="mt-2 block text-sm text-neutral-500">
+                                <span className="block text-neutral-600 dark:text-neutral-300">{exp.role}</span>
+                                <span className="mt-2 block text-sm text-neutral-500 dark:text-neutral-400">
                                     {exp.period}
                                 </span>
                             </span>
                         </AccordionTrigger>
 
                         <AccordionContent>
-                            <ul className="list-disc space-y-2 pl-5 text-neutral-700">
+                            <ul className="list-disc space-y-2 pl-5 text-neutral-700 dark:text-neutral-200">
                                 {exp.highlights.map((item) => (
                                     <li key={item}>{item}</li>
                                 ))}
